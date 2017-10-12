@@ -22,8 +22,21 @@ Each employee can:
 call your class Employee and receive all the data in the constructor in the order listed
 */
 
-
-
+class Employee {
+    constructor(first_name, last_name, email, age){
+      this.first_name = first_name;
+      this.last_name = last_name;
+      this.email = email;
+      this.age =age;
+    }
+    makeWidget(){
+      return (this.first_name + " " +this.last_name + " " +"Widget");
+    }
+  }
+  
+  var randomGuy= new Employee();
+  console.log(randomGuy);
+ 
 /*
 
 Next, make a manager for Widget Co.
@@ -41,7 +54,22 @@ call your class Manager
 
 */
 
+class Manager{
+    constructor(first_name, last_name, email, age){
+      this.first_name= first_name;
+      this.last_name=last_name;
+      this.email=email;
+      this.age=age;
+      this.reports=[];
+    }
+    hire(Employee){
+      return (reports.push(index));
+    }
+  fire(Employee){return reports.slice(index,1)}
+}
 
+
+console.log (Manager)
 
 
 
@@ -65,6 +93,9 @@ Everytime they fire an employee they get $100 added to their bonus.
 call your class ProgressiveManager
 */
 
+var ProgressiveManager = new Manager();
+ProgressiveManager.title = "Not a manager";
+ProgressiveManager.bonus = 0;
 
 
 
