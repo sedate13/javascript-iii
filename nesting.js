@@ -38,6 +38,19 @@ var employees = [{
 
 // Code here
 
+function employeeUpdater() {
+  employees.forEach(function (currentItem, i) {
+    console.log(currentItem.firstName);
+    if (currentItem.firstName === "Theo") { 
+      
+      delete employees[i].firstName;}
+    if (currentItem.firstName === "Lorie") { employees[i].department = "HR" }
+    
+  }) 
+  console.log(employees);
+  return employees;
+  
+}
 
 
 
@@ -75,7 +88,7 @@ var cat = {
   }, {
     name: 'Lazy Bones',
     activities: ['sleep', 'pre-sleep naps']
-    }]
+  }]
 }
 
 // Fluffy has two friends, Grumpy and Lazy Bones. 
@@ -110,11 +123,11 @@ var myCar = {
       date: '3/15/93',
       damage: '$5,000',
       atFaultForAccident: true
-    },{
+    }, {
       date: '7/4/98',
       damage: '$2,200',
       atFaultForAccident: true
-    },{
+    }, {
       date: '6/22/99',
       damage: '$7,900',
       atFaultForAccident: true
@@ -141,7 +154,7 @@ var myCar = {
 //    If the number is even, replace it with 'even'.
 // 4. Return the modified numsArr.
 
-var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
+var numsArr = [[1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 
 
 
